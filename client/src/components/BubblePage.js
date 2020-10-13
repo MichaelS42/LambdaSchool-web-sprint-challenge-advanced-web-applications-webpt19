@@ -21,8 +21,9 @@ const BubblePage = () => {
         console.log(err.response);
       });
   }, []);
+  
   return (
-    <div className="bubbles">
+    <div className="">
       <ColorList colors={colorList} updateColors={setColorList} setDependency={setDependency} />
       <Bubbles colors={colorList} />
     </div>
